@@ -1,0 +1,17 @@
+conda
+gdal
+Miniconda
+executables
+ogr
+geospatial
+subsetting
+reprojection
+mosaicing
+hillshading
+coloring
+gridding
+rasters
+replayable
+gdalg
+json
+msys
