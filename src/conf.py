@@ -19,7 +19,7 @@ today_date = date.today() # or use a specific date
 #today_date = date(2026, 3, 1)
 today_fmt = "%d %b %Y"
 
-copyright = "2006, Even Rouault".format(today_date.year)
+copyright = "2026, Even Rouault".format(today_date.year)
 
 # %% General configuration
 
@@ -71,7 +71,6 @@ html_theme = "sphinx_rtd_theme"
 html_theme_options = {
     "canonical_url": "https://gdal-cli-workshop.github.io/",
     "logo_only": True,
-    "version_selector": True,
     "prev_next_buttons_location": "both",
     "style_external_links": False,
     "style_nav_header_background": "#353130",

@@ -7,7 +7,7 @@ This workshop requires GDAL 3.13.0, released May 2026.
 The suggested installation procedure is to use GDAL Conda builds. Conda is a
 system package management system that works on all major desktop operating system
 (Linux, Windows, MacOS X). It is mainly aimed at the Python ecosystem, but with
-a strong focus on tackling correctly the issue of software with native
+a strong focus on correctly handling the complexities of software with native
 dependencies such as GDAL.
 
 Linux
@@ -77,19 +77,19 @@ Answer "yes", or otherwise find another way of installing GDAL :-)
 ::
 
     Miniconda3 will now be installed into this location:
-    /home/{YOUR_USE_NAME_HERE}/miniconda3
+    /home/{YOUR_USER_NAME_HERE}/miniconda3
 
       - Press ENTER to confirm the location
       - Press CTRL-C to abort the installation
       - Or specify a different location below
 
-    [/home/{YOUR_USE_NAME_HERE}/miniconda3] >>> 
+    [/home/{YOUR_USER_NAME_HERE}/miniconda3] >>> 
 
 Press ENTER to confirm.
 
 ::
 
-    PREFIX=/home/{YOUR_USE_NAME_HERE}/miniconda3
+    PREFIX=/home/{YOUR_USER_NAME_HERE}/miniconda3
     Unpacking bootstrapper...
     Unpacking payload...
 
@@ -100,7 +100,7 @@ Press ENTER to confirm.
 
     ## Package Plan ##
 
-      environment location: /home/{YOUR_USE_NAME_HERE}/miniconda3
+      environment location: /home/{YOUR_USER_NAME_HERE}/miniconda3
 
       added / updated specs:
         - pkgs/main/linux-64::_libgcc_mutex==0.1=main
@@ -136,18 +136,18 @@ For simplicity, do type "yes" (so against the suggestion)
 
 ::
 
-    no change     /home/{YOUR_USE_NAME_HERE}/miniconda3/condabin/conda
-    no change     /home/{YOUR_USE_NAME_HERE}/miniconda3/bin/conda
-    no change     /home/{YOUR_USE_NAME_HERE}/miniconda3/bin/conda-env
-    no change     /home/{YOUR_USE_NAME_HERE}/miniconda3/bin/activate
-    no change     /home/{YOUR_USE_NAME_HERE}/miniconda3/bin/deactivate
-    no change     /home/{YOUR_USE_NAME_HERE}/miniconda3/etc/profile.d/conda.sh
-    no change     /home/{YOUR_USE_NAME_HERE}/miniconda3/etc/fish/conf.d/conda.fish
-    no change     /home/{YOUR_USE_NAME_HERE}/miniconda3/shell/condabin/Conda.psm1
-    no change     /home/{YOUR_USE_NAME_HERE}/miniconda3/shell/condabin/conda-hook.ps1
-    no change     /home/{YOUR_USE_NAME_HERE}/miniconda3/lib/python3.13/site-packages/xontrib/conda.xsh
-    no change     /home/{YOUR_USE_NAME_HERE}/miniconda3/etc/profile.d/conda.csh
-    modified      /home/{YOUR_USE_NAME_HERE}/.bashrc
+    no change     /home/{YOUR_USER_NAME_HERE}/miniconda3/condabin/conda
+    no change     /home/{YOUR_USER_NAME_HERE}/miniconda3/bin/conda
+    no change     /home/{YOUR_USER_NAME_HERE}/miniconda3/bin/conda-env
+    no change     /home/{YOUR_USER_NAME_HERE}/miniconda3/bin/activate
+    no change     /home/{YOUR_USER_NAME_HERE}/miniconda3/bin/deactivate
+    no change     /home/{YOUR_USER_NAME_HERE}/miniconda3/etc/profile.d/conda.sh
+    no change     /home/{YOUR_USER_NAME_HERE}/miniconda3/etc/fish/conf.d/conda.fish
+    no change     /home/{YOUR_USER_NAME_HERE}/miniconda3/shell/condabin/Conda.psm1
+    no change     /home/{YOUR_USER_NAME_HERE}/miniconda3/shell/condabin/conda-hook.ps1
+    no change     /home/{YOUR_USER_NAME_HERE}/miniconda3/lib/python3.13/site-packages/xontrib/conda.xsh
+    no change     /home/{YOUR_USER_NAME_HERE}/miniconda3/etc/profile.d/conda.csh
+    modified      /home/{YOUR_USER_NAME_HERE}/.bashrc
 
     ==> For changes to take effect, close and re-open your current shell. <==
 
@@ -189,11 +189,11 @@ from the conda community.
 
     ## Package Plan ##
 
-      environment location: /home/{YOUR_USE_NAME_HERE}/miniconda3/envs/gdal
+      environment location: /home/{YOUR_USER_NAME_HERE}/miniconda3/envs/gdal
 
 
 
-    Proceed ([y]/n)? y
+    Proceed ([y]/n)?
 
 Answer "y" and validate.
 
@@ -252,7 +252,7 @@ Let's update the base Conda environment to save a later warning:
 
     ## Package Plan ##
 
-      environment location: /home/{YOUR_USE_NAME_HERE}/miniconda3
+      environment location: /home/{YOUR_USER_NAME_HERE}/miniconda3
 
       added / updated specs:
         - conda
@@ -264,7 +264,7 @@ Let's update the base Conda environment to save a later warning:
       openssl                                  3.6.1-h35e630c_1 --> 3.6.2-h35e630c_0 
 
 
-    Proceed ([y]/n)? y
+    Proceed ([y]/n)?
 
 
 Answer "y" and validate.
@@ -295,7 +295,7 @@ Now, we can finally install GDAL !
 
     ## Package Plan ##
 
-      environment location: /home/{YOUR_USE_NAME_HERE}/miniconda3/envs/gdal
+      environment location: /home/{YOUR_USER_NAME_HERE}/miniconda3/envs/gdal
 
       added / updated specs:
         - gdal
@@ -319,7 +319,7 @@ Now, we can finally install GDAL !
       zstd               conda-forge/linux-64::zstd-1.5.7-hb78ec9c_6 
 
 
-    Proceed ([y]/n)? y
+    Proceed ([y]/n)?
 
 Answer "y" and validate.
 
@@ -468,7 +468,7 @@ from the conda community.
 
 
 
-    Proceed ([y]/n)?y
+    Proceed ([y]/n)?
 
 
 Answer "y" and validate.
@@ -551,7 +551,7 @@ When an environment is activated, new lines in the shell are prefixed with "(nam
       zstd               conda-forge/win-64::zstd-1.5.7-h534d264_6
 
 
-    Proceed ([y]/n)?y
+    Proceed ([y]/n)?
 
 Answer "y" and validate.
 
@@ -628,7 +628,7 @@ Type (``<TAB>`` means to press the TAB key):
 
     gdal --<TAB><TAB>
 
-And you should see the following options to be proposed:
+And you should see the following options proposed:
 
 ::
 
