@@ -28,6 +28,7 @@ extensions = [
     "sphinx.ext.githubpages",  # to generate .nojekyll
     "sphinx_toolbox.collapse",
     "sphinxcontrib.cairosvgconverter",
+    "sphinx_copybutton",
 ]
 
 # File extensions of source files
@@ -63,6 +64,10 @@ pygments_style = "sphinx"
 spelling_lang = tokenizer_lang = "en_GB"
 spelling_show_suggestions = False
 spelling_ignore_importable_modules = False
+
+# Copy button configuration
+copybutton_prompt_text = "$ "
+copybutton_line_continuation_character = "\\"
 
 # %% Options for HTML output
 
